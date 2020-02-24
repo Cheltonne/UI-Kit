@@ -1,0 +1,117 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  height: 2.5em;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+.center-div {
+  margin: 0px auto;
+  width: 100px; 
+}
+
+.div-in-div{
+  margin: 5em;
+}
+
+.rectangle{
+  width:200px;
+  height:100px;
+}
+
+.container {
+  display: flex; /* or inline-flex */
+  justify-content: space-around;
+}
+
+.body-div{
+  display: block;
+  margin: 6em;
+  background-color: #fafafa;
+}
+
+.item1 {
+  order: 1; /* default is 0 */
+}
+
+.item2 {
+  order: 2; /* default is 0 */
+}
+
+.item3 {
+  order: 3; /* default is 0 */
+}
+
+/* The alert message box */
+
+.warning{
+  background-color: #D94D00;
+  padding: 20px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.danger{
+  background-color: #E00500;
+  padding: 20px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.success{
+  background-color: #61AF67;
+  padding: 20px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.info{
+  background-color: #294D99;
+  padding: 20px;
+  color: white;
+  margin-bottom: 15px;
+}
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}
+
+.heading{
+  font-family: 'Playfair Display';
+  font-size: 5em;
+}
+
+.regular-text{
+  font-family: 'Roboto';
+}
