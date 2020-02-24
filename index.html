@@ -3,20 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UI Kit.</title>
+  <title>UI Kit</title>
   <link href="main.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
 </head>
-<body>
+<body style="margin: 0;">
 
-<nav>
+<nav class="navbar">
 	<ul>
-		<li style="color: cornsilk;">UI Kit <small>by Chelton</small></li>
+		<li class="heading" style="color: black; font-size: 2.1em;">Rocket UI Kit</li>
+		<div style="background-color: #579985; height: 3em; width: 7em;"></div>
 	</ul>
 </nav>
 
 <div>
-    <div class="body-div" style="border: 1px solid black;">
+    <div class="body-div top-right-shadow" style="border: 1px solid black;">
 		<h1>Colors</h1>
 		<div class="div-in-div, container">
 			<div class="item1">
@@ -33,38 +34,76 @@
 		<h1>Three shades of Grey</h1>
 		<div class="div-in-div, container">
 			<div class="item1">
-				<h2>Dark</h2>
+				<h2>dark</h2>
 				<div class="rectangle" style="background-color: #494949;"></div>
+				<p>#49494</p>
 			</div>
 			<div class="item2">
-				<h2>Dark</h2>
-				<div class="rectangle" style="background-color: #5B5B5B;"></div>
+				<h2>medium-light</h2>
+				<div class="rectangle" style="background-color: #9B9B9B;"></div>
+				<p>#5B5B5B</p>
 			</div>
 			<div class="item3">
-				<h2>Light</h2>
-				<div class="rectangle" style="background-color: #9B9B9B"></div>
+				<h2>light</h2>
+				<div class="rectangle" style="background-color: #EFF1EF"></div>
+				<p>#9B9B9B</p>
 			</div>
 		</div><br/>
+		<hr class="solid">
 		<h1>Alert boxes</h1>
-		<div class="warning">
+		<div class="warning-a">
 			<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
 			This is a warning alert box.
 		</div>
 		
-		<div class="danger">
+		<div class="danger-a">
 			<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
 			This is a danger alert box.
 		</div>
-		<div class="success">
+		<div class="success-a">
 			<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
 			This is a success alert box.
 		</div>
-		<div class="info">
+		<div class="info-a">
 			<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
 			This is an info alert box.
 		</div>
-		<h1 class="heading">Heading text sample</h1>
-		<p class="regular-text">Regular text sample : Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</p>
+		<hr class="solid">
+		<h1 class="heading" style="font-size: 5em;">Heading text sample</h1>
+		<h2 class="regular-text">Regular text sample:</h2> <p class="regular-text">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié.<blockquote>Blockquote sample</blockquote> Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</p>
+		
+		<small>Small text sample</small>
+		<hr class="solid">
+		<h1>Buttons</h1>
+		<button class="btn success">Success</button>
+		<button class="btn info">Info</button>
+		<button class="btn warning">Warning</button>
+		<button class="btn danger">Danger</button>
+		<button class="btn default">Default</button>
+		<br/>
+		<button class="btn success-outline">Success</button>
+		<button class="btn info-outline">Info</button>
+		<button class="btn warning-outline">Warning</button>
+		<button class="btn danger-outline">Danger</button>
+		<button class="btn default-outline">Default</button>
+		<br/>
+		<button class="btn-lg">Large</button>
+		<button class="btn-sm">Small</button>
+		<hr class="solid">
+		<h1>Icons sample</h1>
+		<img src="Icons/Tilda_Icons_42_restaurant_breakfast.svg" class="icon-default">
+		<img src="Icons/Tilda_Icons_42_restaurant_burger.svg" class="icon-default">
+		<img src="Icons/Tilda_Icons_42_restaurant_candle.svg" class="icon-default">
+		<img src="Icons/Tilda_Icons_42_restaurant_card.svg" class="icon-default">
+		<img src="Icons/Tilda_Icons_42_restaurant_chicken.svg" class="icon-default">
+		<img src="Icons/Tilda_Icons_42_restaurant_chillout.svg" class="icon-default">
+		<br/>
+		<img src="Icons/Tilda_Icons_42_restaurant_coctail.svg" class="icon-sm">
+		<img src="Icons/Tilda_Icons_42_restaurant_cook.svg" class="icon-sm">
+		<img src="Icons/Tilda_Icons_42_restaurant_dessert.svg" class="icon-sm">
+		<img src="Icons/Tilda_Icons_42_restaurant_dietary.svg" class="icon-sm">
+		<img src="Icons/Tilda_Icons_42_restaurant_dish.svg" class="icon-sm">
+		<img src="Icons/Tilda_Icons_42_restaurant_food delivery.svg" class="icon-sm"> 
   </div>
 </div>
 
